@@ -43,9 +43,3 @@ resource "digitalocean_project" "cw3" {
   environment = "Development"
   resources   = [digitalocean_droplet.vm_1.urn]
 }
-
-resource "local_file" "private_key" {
-  filename = "./privkey"
-  content = tls_private_key.test2.private_key_openssh  
-  file_permission = 0600
-}
