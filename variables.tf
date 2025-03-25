@@ -5,6 +5,6 @@ variable "do_token" {
 }
 
 variable "region" {
-  type = string
+  type    = string
   default = "fra1"
 }
