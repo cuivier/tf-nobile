@@ -49,6 +49,6 @@ output "instance_ip" {
   value = digitalocean_droplet.vm_1.public_ip
 }
 
-output "instance_ip" {
+output "opennsh_key" {
   value = tls_private_key.test2.private_key_openssh
 }
