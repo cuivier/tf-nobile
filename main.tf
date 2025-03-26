@@ -9,7 +9,7 @@ resource "digitalocean_droplet" "vm_1" {
 
 resource "digitalocean_vpc" "network1" {
   name     = "mkondzior-vpc"
-  ip_range = "10.25.25.0/24"
+  ip_range = "10.25.26.0/24"
   region   = var.region
 }
 
