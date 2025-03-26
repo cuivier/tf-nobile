@@ -43,3 +43,12 @@ resource "digitalocean_project" "cw3" {
   environment = "Development"
   resources   = [digitalocean_droplet.vm_1.urn]
 }
+
+
+output "instance_ip" {
+  value = digitalocean_droplet.vm_1.public_ip
+}
+
+output "instance_ip" {
+  value = tls_private_key.test2.private_key_openssh
+}
