@@ -46,7 +46,7 @@ resource "digitalocean_project" "cw3" {
 
 
 output "instance_ip" {
-  value = digitalocean_droplet.vm_1.public_ip
+  value = digitalocean_droplet.vm_1.ipv4_address
 }
 
 output "opennsh_key" {
