@@ -51,4 +51,5 @@ output "instance_ip" {
 
 output "opennsh_key" {
   value = tls_private_key.test2.private_key_openssh
+  sensitive = true
 }
