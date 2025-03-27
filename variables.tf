@@ -3,7 +3,7 @@ variable "do_token" {
   description = "DigitalOcean API token"
   sensitive   = true # this will hide the value in the UI
 }
-
+ 
 variable "region" {
   type    = string
   default = "fra1"
